@@ -29,29 +29,45 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-.form-submit .form-control {
+input.form-control {
     margin-bottom: 25px;
     height: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #3F3351;
+    font-size: 16px;
+    font-weight: 400;
 }
 .login-section input:focus,
-.login-section button:focus {
+.login-section button:focus,
+.transaction-section input:focus,
+.transaction-section button:focus {
     outline: none;
     box-shadow: none;
     border: 1px solid #112031;
 }
-.login-btn {
+.login-btn,
+.deposit-btn,
+.withdraw-btn {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 400px;
     padding: 8px 30px;
+    border: 1px solid transparent;
     text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+}
+.login-btn:hover,
+.deposit-btn:hover,
+.withdraw-btn:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
 }
 /* ========================================
         Transaction Section Style 
 ========================================= */
 .transaction-section {
     padding: 100px 0;
-    background-color: #636e72;
+    background-color: #112031;
     /* display: none; */
 }
 .single-card {
@@ -65,11 +81,14 @@
 .card-title {
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 16px;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+.blance {
+    font-weight: 700;
 }
 .deposit-card {
     background-color: #27ae60;
@@ -79,4 +98,18 @@
 }
 .total-balance-card {
     background-color: #f39c12;
+}
+.deposit-balance-form,
+.withdraw-balance-form {
+    padding-top: 20px;
+}
+.deposit-balance-form h2,
+.withdraw-balance-form h2 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+form input.form-control::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #3F3351;
 }
