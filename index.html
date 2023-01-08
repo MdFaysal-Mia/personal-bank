@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,13 @@
     <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
     <header></header>
+
     <main>
+        <!-- Login Form Section Start -->
         <section class="login-section">
             <div class="container">
                 <div class="row">
@@ -27,15 +32,41 @@
                 </div>
             </div>
         </section>
+        <!-- Login Form Section End -->
+        <!-- Transaction Section Start -->
+        <section class="transaction-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="deposit-box status">
+                            <h5>Deposit</h5>
+                            <h2>$ <span id="current-deposit">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="withdraw-box status">
+                            <h5>Withdraw</h5>
+                            <h2>$ <span id="current-withdraw">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="total-balance status">
+                            <h5>Balance</h5>
+                            <h2>$ <span id="current-balance">00</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Transaction Section End -->
     </main>
     <footer></footer>
-
-
-
 
     <!-- bootstrap js -->
     <script src="assets/js/script.js"></script>
     <!-- script js -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
