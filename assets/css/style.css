@@ -111,5 +111,6 @@ input.form-control {
 }
 form input.form-control::placeholder {
     font-family: 'Poppins', sans-serif;
-    color: #3F3351;
+    color: #9D9D9D;
 }
+
