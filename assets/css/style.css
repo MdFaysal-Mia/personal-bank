@@ -46,3 +46,37 @@
     padding: 8px 30px;
     text-transform: capitalize;
 }
+/* ========================================
+        Transaction Section Style 
+========================================= */
+.transaction-section {
+    padding: 100px 0;
+    background-color: #636e72;
+    /* display: none; */
+}
+.single-card {
+    margin: 10px;
+    padding: 26px;
+    box-shadow: 10px 10px 25px #3F3351;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.deposit-card {
+    background-color: #27ae60;
+}
+.withdraw-card {
+    background-color: #e74c3c;
+}
+.total-balance-card {
+    background-color: #f39c12;
+}
