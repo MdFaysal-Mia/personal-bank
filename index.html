@@ -18,15 +18,15 @@
 
     <main>
         <!-- Login Form Section Start -->
-        <section class="login-section">
+        <section id="login-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <h1 class="text-title text-center">Welcome to Basic Bank</h1>
                         <form action="#" class="form-submit">
-                            <input type="email" class="form-control" placeholder="your email">
-                            <input type="password" class="form-control" placeholder="your password">
-                            <button class="login-btn btn btn-success">Login</button>
+                            <input id="type-email" type="email" class="form-control" placeholder="your email">
+                            <input id="type-password" type="password" class="form-control" placeholder="your password">
+                            <button id="login-btn" class="btn btn-success">Login</button>
                         </form>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
         </section>
         <!-- Login Form Section End -->
         <!-- Transaction Section Start -->
-        <section class="transaction-section">
+        <section id="transaction-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -61,20 +61,20 @@
                         <div class="deposit-balance-form">
                             <h2>Deposit</h2>
                             <form>
-                                <input type="text" class="form-control"
+                                <input id="deposit-money" type="text" class="form-control"
                                     placeholder="$ amount you want to deposit">
                             </form>
-                            <button class="btn btn-success deposit-btn">Deposit</button>
+                            <button id="deposit-btn" class="btn btn-success">Deposit</button>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="withdraw-balance-form">
                             <h2>Withdraw</h2>
                             <form>
-                                <input type="text" class="form-control"
+                                <input id="withdraw-money" type="text" class="form-control"
                                     placeholder="$ amount you want to withdraw">
                             </form>
-                            <button class="btn btn-success withdraw-btn">Withdraw</button>
+                            <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
                         </div>
                     </div>
                 </div>
