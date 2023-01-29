@@ -61,7 +61,7 @@ input.form-control {
 #transaction-section {
     padding: 100px 0;
     background-color: #112031;
-    display: none;
+    /* display: none; */
 }
 .single-card {
     margin: 10px;
