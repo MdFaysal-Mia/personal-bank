@@ -13,83 +13,77 @@
 </head>
 
 <body>
+    <!-- Login Form Section Start -->
+    <section id="login-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1 class="text-title text-center">Welcome to Basic Bank</h1>
+                    <form action="#" class="form-submit">
+                        <input id="user-email" type="email" class="form-control" required placeholder="your email">
+                        <input id="user-password" type="password" required class="form-control"
+                            placeholder="your password">
+                        <button id="login-btn" class="btn btn-success">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Login Form Section End -->
 
-    <header></header>
-
-    <main>
-        <!-- Login Form Section Start -->
-        <section id="login-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <h1 class="text-title text-center">Welcome to Basic Bank</h1>
-                        <form action="#" class="form-submit">
-                            <input id="user-email" type="email" class="form-control" required placeholder="your email">
-                            <input id="user-password" type="password" required class="form-control"
-                                placeholder="your password">
-                            <button id="login-btn" class="btn btn-success">Login</button>
+    <!-- Transaction Section Start -->
+    <section id="transaction-section">
+        <div class="container">
+            <!-- balance area start -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="deposit-card single-card">
+                        <h5 class="card-title">Deposit</h5>
+                        <h2 class="blance">$<span id="deposit-total">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="withdraw-card single-card">
+                        <h5 class="card-title">Withdraw</h5>
+                        <h2 class="blance">$<span id="withdraw-total">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="total-balance-card single-card">
+                        <h5 class="card-title">Balance</h5>
+                        <h2 class="blance">$<span id="balance-total">1200</span></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- balance area start -->
+            <!-- balance input field area start -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="deposit-balance-form">
+                        <h2>Deposit</h2>
+                        <form>
+                            <input id="deposit-money" type="text" class="form-control"
+                                placeholder="$ amount you want to deposit">
                         </form>
+                        <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="withdraw-balance-form">
+                        <h2>Withdraw</h2>
+                        <form>
+                            <input id="withdraw-money" type="text" class="form-control"
+                                placeholder="$ amount you want to withdraw">
+                        </form>
+                        <button id="withdraw-btn" class="btn btn-danger">Withdraw</button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Login Form Section End -->
+            <!-- balance input field area end -->
+        </div>
 
-        <!-- Transaction Section Start -->
-        <section id="transaction-section">
-            <div class="container">
-                <!-- balance area start -->
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="deposit-card single-card">
-                            <h5 class="card-title">Deposit</h5>
-                            <h2 class="blance">$<span id="deposit-total">00</span></h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="withdraw-card single-card">
-                            <h5 class="card-title">Withdraw</h5>
-                            <h2 class="blance">$<span id="withdraw-total">00</span></h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="total-balance-card single-card">
-                            <h5 class="card-title">Balance</h5>
-                            <h2 class="blance">$<span id="balance-total">1200</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- balance area start -->
-                <!-- balance input field area start -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="deposit-balance-form">
-                            <h2>Deposit</h2>
-                            <form>
-                                <input id="deposit-money" type="text" class="form-control"
-                                    placeholder="$ amount you want to deposit">
-                            </form>
-                            <button id="deposit-btn" class="btn btn-success">Deposit</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="withdraw-balance-form">
-                            <h2>Withdraw</h2>
-                            <form>
-                                <input id="withdraw-money" type="text" class="form-control"
-                                    placeholder="$ amount you want to withdraw">
-                            </form>
-                            <button id="withdraw-btn" class="btn btn-danger">Withdraw</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- balance input field area end -->
-            </div>
-
-        </section>
-        <!-- Transaction Section End -->
-    </main>
-    <footer></footer>
+    </section>
+    <!-- Transaction Section End -->
 
     <!-- script js -->
     <script src="assets/js/script.js"></script>
