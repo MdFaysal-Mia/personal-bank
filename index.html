@@ -24,8 +24,8 @@
                     <div class="col-lg-8 offset-lg-2">
                         <h1 class="text-title text-center">Welcome to Basic Bank</h1>
                         <form action="#" class="form-submit">
-                            <input id="user-email" type="email" class="form-control" placeholder="your email">
-                            <input id="user-password" type="password" class="form-control" placeholder="your password">
+                            <input id="user-email" type="email" class="form-control" required placeholder="your email">
+                            <input id="user-password" type="password" required class="form-control" placeholder="your password">
                             <button id="login-btn" class="btn btn-success">Login</button>
                         </form>
                     </div>
@@ -52,7 +52,7 @@
                     <div class="col-lg-4">
                         <div class="total-balance-card single-card">
                             <h5 class="card-title">Balance</h5>
-                            <h2 class="blance">$<span id="total-amount">00</span></h2>
+                            <h2 class="blance">$<span id="balance-total">1200</span></h2>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                                 <input id="withdraw-money" type="text" class="form-control"
                                     placeholder="$ amount you want to withdraw">
                             </form>
-                            <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                            <button id="withdraw-btn" class="btn btn-danger">Withdraw</button>
                         </div>
                     </div>
                 </div>
