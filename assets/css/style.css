@@ -39,8 +39,8 @@ input.form-control {
 }
 #login-section input:focus,
 #login-section button:focus,
-#transaction-section input:focus,
-#transaction-section button:focus {
+.transaction-section input:focus,
+.transaction-section button:focus {
     outline: none;
     box-shadow: none;
     border: 1px solid #112031;
@@ -58,7 +58,7 @@ input.form-control {
 /* ========================================
         Transaction Section Style 
 ========================================= */
-#transaction-section {
+.transaction-section {
     display: none;
     padding: 100px 0;
     background-color: #112031;

@@ -1,17 +1,19 @@
-/* Login Button Event Handler */
+/* ========================================
+        Login Button Event Handler 
+========================================= */
 const loginButton = document.getElementById("login-btn");
 loginButton.addEventListener("click", function () {
     const emailField = document.getElementById("user-email");
     const userEmail = emailField.value;
     const passwordField = document.getElementById("user-password");
     const userPassword = passwordField.value;
-    if (userEmail === "" && userPassword === "") {
+    if (userEmail === " " && userPassword === " ") {
         alert("Please get your email and password");
     }
     else {
         const loginSection = document.getElementById("login-section");
         loginSection.style.display = "none";
-        const transactionSection = document.getElementById("transaction-section");
+        const transactionSection = document.getElementById("transaction");
         transactionSection.style.display = "block";
     }
 });
@@ -51,7 +53,9 @@ function updateBalance(depositAmount, isAdd) {
 
 }
 
-/* Deposit Button Event Handler */
+/* ========================================
+        Deposit Button Event Handler 
+========================================= */
 
 document.getElementById("deposit-btn").addEventListener("click", function () {
     const newDepositAmount = getInputValue("deposit-money");
@@ -63,7 +67,9 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
 
 })
 
-/*  Withdraw Button Event Handler */
+/* ========================================
+        Withdraw Button Event Handler 
+========================================= */
 
 document.getElementById("withdraw-btn").addEventListener("click", function () {
     const newWithdrawAmount = getInputValue("withdraw-money");
