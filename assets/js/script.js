@@ -7,7 +7,7 @@ loginButton.addEventListener("click", function () {
     const userEmail = emailField.value;
     const passwordField = document.getElementById("user-password");
     const userPassword = passwordField.value;
-    if (userEmail === " " && userPassword === " ") {
+    if (userEmail === "" && userPassword === "") {
         alert("Please get your email and password");
     }
     else {
