@@ -62,6 +62,7 @@ input.form-control {
     padding: 100px 0;
     background-color: #112031;
     display: none;
+    height: 100vh;
 }
 .single-card {
     margin: 10px;
