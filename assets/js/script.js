@@ -1,21 +1,20 @@
-// /* Login Button Event Handler */ 
-// const loginButton = document.getElementById("login-btn");
-// loginButton.addEventListener("click", function(){
-//     const emailField = document.getElementById("user-email");
-// const userEmail = emailField.value;
-//     const passwordField = document.getElementById("user-password");
-// const userPassword = passwordField.value;
-//     // console.log("Email",userEmail,"Password",userPassword);
-//     if(userEmail === "" && userPassword === "") {
-//         alert("Please get your email and password");
-//     }
-//     else {
-//         const loginSection = document.getElementById("login-section");
-//         loginSection.style.display = "none";
-//         const transactionSection = document.getElementById("transaction-section");
-//         transactionSection.style.display = "block";
-//     }
-// });
+/* Login Button Event Handler */
+const loginButton = document.getElementById("login-btn");
+loginButton.addEventListener("click", function () {
+    const emailField = document.getElementById("user-email");
+    const userEmail = emailField.value;
+    const passwordField = document.getElementById("user-password");
+    const userPassword = passwordField.value;
+    if (userEmail === "" && userPassword === "") {
+        alert("Please get your email and password");
+    }
+    else {
+        const loginSection = document.getElementById("login-section");
+        loginSection.style.display = "none";
+        const transactionSection = document.getElementById("transaction-section");
+        transactionSection.style.display = "block";
+    }
+});
 
 function getInputValue(inputId) {
     const inputField = document.getElementById(inputId);
