@@ -7,8 +7,8 @@ loginButton.addEventListener("click", function () {
     const userEmail = emailField.value;
     const passwordField = document.getElementById("user-password");
     const userPassword = passwordField.value;
-    if (userEmail === "" && userPassword === "") {
-        alert("Please get your email and password");
+    if (userEmail === "" && userPassword === "" ) {
+        alert("Email and Password field must be filled out");
     }
     else {
         const loginSection = document.getElementById("login-section");
@@ -17,7 +17,9 @@ loginButton.addEventListener("click", function () {
         transactionSection.style.display = "block";
     }
 });
-
+/* ========================================
+        User Input Value Function  
+========================================= */
 function getInputValue(inputId) {
     const inputField = document.getElementById(inputId);
     const inputAmountText = inputField.value;
@@ -26,21 +28,27 @@ function getInputValue(inputId) {
     inputField.value = '';
     return amountValue;
 }
-
+/* ========================================
+        Update Input Value Function  
+========================================= */
 function updateTotalField(updateTotalField, amount) {
     const totalElement = document.getElementById(updateTotalField);
     const totalText = totalElement.innerText;
     const previousTotalAmount = parseFloat(totalText);
     totalElement.innerText = previousTotalAmount + amount;
 }
-
+/* ========================================
+        Current Balance Function  
+========================================= */
 function getCurrentBalance() {
     const balanceTotal = document.getElementById("balance-total");
     const balanceTotalText = balanceTotal.innerText;
     const previousBalanceTotal = parseFloat(balanceTotalText);
     return previousBalanceTotal;
 }
-
+/* ========================================
+        Update Balance Function  
+========================================= */
 function updateBalance(depositAmount, isAdd) {
     const balanceTotal = document.getElementById("balance-total");
     const previousBalanceTotal = getCurrentBalance();
@@ -64,6 +72,9 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
         // update account balance
         updateBalance(newDepositAmount, true);
     }
+    else {
+        alert("Please enter the Amount");
+    }
 
 })
 
@@ -78,5 +89,8 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
         updateTotalField("withdraw-total", newWithdrawAmount);
         // update total balance
         updateBalance(newWithdrawAmount, false);
+    }
+    else {
+        alert("Please enter the amount");
     }
 });
