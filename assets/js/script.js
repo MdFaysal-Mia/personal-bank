@@ -7,7 +7,7 @@ loginButton.addEventListener("click", function () {
     const userEmail = emailField.value;
     const passwordField = document.getElementById("user-password");
     const userPassword = passwordField.value;
-    if (userEmail === "" && userPassword === "" ) {
+    if (userEmail == "" && userPassword == ""){
         alert("Email and Password field must be filled out");
     }
     else {
